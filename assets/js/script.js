@@ -1,8 +1,14 @@
 $(function() {
-  $("li a").click(function() {
-    $("html, body").animate({
-      scrollTop: $($(this).attr("href")).offset().top - 48
+  // smooth scroll
+  $('.nav a').click(function() {
+    $('html, body').animate({
+      scrollTop: $($(this).attr('href')).offset().top - 48
     }, 500);
     return false;
+  });
+
+  // hide navbar on navbar item click
+  $('.nav a').click(function() {
+  	$('.navbar-collapse').collapse('hide')
   });
 });
