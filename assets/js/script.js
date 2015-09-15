@@ -7,7 +7,7 @@ $(function() {
     return false;
   });
 
-  // hide navbar on navbar item click
+  // hide collapsed navbar on navbar item click
   $('.nav a').click(function() {
   	$('.navbar-collapse').collapse('hide')
   });
